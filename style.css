@@ -34,13 +34,14 @@ body{
 
     border-radius: 50%;
 
+    font-family: 'Noto Sans JP', sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 40px;
     line-height: 51px;
 
-    /* border not working */
-    border: 0px solid #000000;
+    color: #F00149;
+    -webkit-text-stroke: 2px black;
 }
 
 
