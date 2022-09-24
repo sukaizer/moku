@@ -1,4 +1,9 @@
-body{
+html,
+body {
+    height: 100%;
+}
+
+body {
     display: flex;
     flex-direction: row;
 
@@ -8,15 +13,15 @@ body{
     background-color: rgb(0, 0, 0);
 }
 
-.left-col{
+.left-col {
     display: flex;
     flex: 4;
     justify-content: end;
     align-items: center;
 }
 
-.right-col{
-    flex:3;
+.right-col {
+    flex: 3;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -39,6 +44,8 @@ body{
     font-weight: 500;
     font-size: 45px;
     letter-spacing: -1px;
+
+    text-decoration: none;
 
     color: #F00149;
     -webkit-text-stroke: 3px black;
@@ -71,4 +78,97 @@ body{
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+}
+
+.score {
+    font-size: 40px;
+    color: #E90000;
+    position: absolute;
+    left: 1%;
+    top: 1%;
+    margin: 0;
+}
+
+.notesframe {
+    height: 100vh;
+    width: 30rem;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    padding: 10px;
+
+    box-sizing: border-box;
+    background: #000000;
+    border-width: 0px 5px;
+    border-style: solid;
+    border-color: #E90000;
+}
+
+.healthbar {
+    box-sizing: border-box;
+
+    position: absolute;
+    left: 68%;
+    top: 52%;
+    width: 2rem;
+    height: 20rem;
+
+    background: #00FF19;
+    border: 3px solid #E90000;
+    border-radius: 11px;
+}
+
+.accuracy {
+    background: #D9D9D9;
+    border-radius: 26px;
+    position: absolute;
+
+    width: 6rem;
+    height: 6rem;
+    left: 90%;
+    top: 5%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+    font-weight: 500;
+    font-size: 30px;
+}
+
+.note-type1 {
+    background: #0289EB;
+    border: 2px solid #0050AE;
+    width: 5rem;
+    height: 5rem;
+    border-radius: 100%;
+    position: absolute;
+    top: 85%;
+}
+
+.note-type2 {
+    background: #0050AE;
+    border: 2px solid #0289EB;
+    width: 5rem;
+    height: 5rem;
+    border-radius: 100%;
+    position: absolute;
+    top: 85%;
+}
+
+.note-type-active {
+    background: #6db4e7;
+    border: 2px solid #1b009d;
+    width: 5rem;
+    height: 5rem;
+    border-radius: 100%;
+    position: absolute;
+    top: 85%;
 }
