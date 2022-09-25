@@ -1,0 +1,103 @@
+body {
+    display: flex;
+    flex-direction: row;
+    font-family: 'Noto Sans JP', sans-serif;
+    margin: 0px;
+    height: 100vh;
+    background-color: rgb(0, 0, 0);
+}
+
+.left-col{
+    flex: 1;
+
+}
+
+.middle-col{
+    flex-direction: column;
+    flex: 2;
+}
+
+.right-col{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.score {
+    font-size: 40px;
+    margin: 20px;
+    color: #E90000;
+}
+
+.notesframe {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+    height: 100vh;
+
+    box-sizing: border-box;
+    background: #000000;
+    border-width: 0px 5px;
+    border-style: solid;
+    border-color: #E90000;
+}
+
+.healthbar {
+    margin: 20px;
+    box-sizing: border-box;
+    left: 68%;
+    top: 52%;
+    width: 2rem;
+    height: 20rem;
+
+    background: #00FF19;
+    border: 3px solid #E90000;
+    border-radius: 11px;
+}
+
+.accuracy {
+    margin: 20px;
+    background: #D9D9D9;
+    border-radius: 26px;
+
+    width: 6rem;
+    height: 6rem;
+    left: 90%;
+    top: 5%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+    font-weight: 500;
+    font-size: 30px;
+}
+
+.note-type1, .note-type2, .note-type-active{
+    width: 5rem;
+    height: 5rem;
+    margin-bottom: 20px;
+    border-radius: 100%;
+    top: 85%;
+}
+
+.note-type1 {
+    background: #0289EB;
+    border: 2px solid #0050AE;
+}
+
+.note-type2 {
+    background: #0050AE;
+    border: 2px solid #0289EB;
+}
+
+.note-type-active {
+    background: #6db4e7;
+    border: 2px solid #1b009d;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+}

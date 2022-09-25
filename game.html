@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="style.css" rel="stylesheet">
+    <link href="gamestyle.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500&display=swap" rel="stylesheet">
@@ -17,16 +17,18 @@
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 </head>
 <body>
-    <div class="container">
+    <div class="left-col">
         <p class="score unselectable">
             3333330
         </p>
-        <div id="notesframe" class="notesframe"></div>
-        <div class="healthbar"></div>
-        <div class="accuracy unselectable">99%</div>
     </div>
-    
-
+    <div class="middle-col">
+        <div id="notesframe" class="notesframe"></div>
+    </div>
+    <div class="right-col">
+        <div class="accuracy unselectable">99%</div>
+        <div class="healthbar"></div>
+    </div>
 </body>
 <script src="/scripts/scriptgame.js"></script>
 </html>

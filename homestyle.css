@@ -1,0 +1,82 @@
+html,
+body {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: row;
+
+    font-family: 'Noto Sans JP', sans-serif;
+    margin: 0px;
+    height: 100vh;
+    background-color: rgb(0, 0, 0);
+}
+
+.left-col {
+    display: flex;
+    flex: 4;
+    justify-content: end;
+    align-items: center;
+}
+
+.right-col {
+    flex: 3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.play-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #FF0A62;
+    width: 12rem;
+    height: 12rem;
+    margin: 30px;
+
+    cursor: pointer;
+
+    border-radius: 50%;
+
+    font-style: normal;
+    font-weight: 500;
+    font-size: 45px;
+    letter-spacing: -1px;
+
+    text-decoration: none;
+
+    color: #F00149;
+    -webkit-text-stroke: 3px black;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+    transition-property: color, box-shadow;
+    transition-duration: 200ms;
+    box-shadow: inset 0px 10px 0px 3px rgba(0, 0, 0, 0.55);
+}
+
+.play-button:hover {
+    box-shadow: inset 0px 0px 0px 6px rgba(0, 0, 0, 0.55);
+}
+
+
+.options {
+    width: 15rem;
+    height: 30rem;
+    margin: 30px;
+
+    background: #F00149;
+    border-radius: 9px;
+
+}
+
+.unselectable {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+

@@ -12,7 +12,7 @@ var drawNotesView = () => {
     notes[i].id = "note" + i;
     $("#notesframe").append(notes[i]);
 
-    $("#note" + i).css("left", positions[i - 1]);
+    $("#note" + i).css(positions[i - 1]);
   }
 
   //automatiser avec une boucle ?
