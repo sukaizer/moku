@@ -1,6 +1,10 @@
+var audio = new Audio("song/nowhere.mp3");
+var audioPlaying = true;
+
 $(document).ready(function () {
   drawNotesView();
-  animateTapNotes();
+  keyListener();
+  audio.play();
 });
 
 var drawNotesView = () => {
@@ -14,37 +18,10 @@ var drawNotesView = () => {
 
     $("#note" + i).css(positions[i - 1]);
   }
-
-  //automatiser avec une boucle ?
-  //   let note1 = document.createElement("div");
-  //   note1.className = "note-type1";
-  //   note1.id = "note1";
-
-  //   let note2 = document.createElement("div");
-  //   note2.className = "note-type2";
-  //   note2.id = "note2";
-
-  //   let note3 = document.createElement("div");
-  //   note3.className = "note-type1";
-  //   note3.id = "note3";
-
-  //   let note4 = document.createElement("div");
-  //   note4.className = "note-type2";
-  //   note4.id = "note4";
-
-  //   $("#notesframe").append(note1);
-  //   $("#notesframe").append(note2);
-  //   $("#notesframe").append(note3);
-  //   $("#notesframe").append(note4);
-
-  //   $("#note1").css("left", "2%");
-  //   $("#note2").css("left", "28%");
-  //   $("#note3").css("left", "54%");
-  //   $("#note4").css("left", "80%");
 };
 
-//function for animating tapnotes when key pressed
-var animateTapNotes = () => {
+//function for key listening
+var keyListener = () => {
   $("body").keypress(function (event) {
     console.log(event);
     switch (event.key) {
@@ -87,6 +64,10 @@ var animateTapNotes = () => {
       case "l":
         $("#note4").addClass("note-type1");
         $("#note4").removeClass("note-type-active");
+        break;
+      case "Escape":
+        audioPlaying ? audio.pause() : audio.play();
+        audioPlaying = !audioPlaying;
         break;
       default:
         break;
